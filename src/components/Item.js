@@ -6,12 +6,18 @@ export default function Item({ item, checkAndUpdatePoints, fallingTime }) {
   const { width, height } = config.itemSize;
   const startX = Math.floor(Math.random() * Math.floor(window.innerWidth));
   const [currentX, setCurrentX] = useState(startX);
+  const [finished, setFinished] = useState(false);
 
   function onUpdate(latest) {
-    if (latest.y >= window.innerHeight) {
+    if (
+      latest.y > window.innerHeight - window.innerHeight * 0.25 &&
+      finished === false
+    ) {
       checkAndUpdatePoints(currentX, item.bucket);
+      setFinished(true);
     }
   }
+  if (finished) return "";
   return (
     <motion.div
       onDragEnd={(event, info) => {

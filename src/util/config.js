@@ -5,8 +5,8 @@ const config = {
   interval: 3,
   fallingTime: 5,
   itemSize: {
-    width: 50,
-    height: 50
+    width: 80,
+    height: 80
   }
 };
 export default config;

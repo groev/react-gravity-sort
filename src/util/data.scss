@@ -1,37 +1,21 @@
-$red: red;
-$blue: blue;
-$green: green;
+$red: #e63946;
+$blue: #1d3557;
 
-.blue {
+body {
+  background-image: url(./bg.jpg);
+}
+
+.democrat {
   background-color: $blue;
-}
-
-.red {
-  background-color: $red;
-}
-
-.green {
-  background-color: $green;
-}
-
-.greenball,
-.redball,
-.blueball {
-  border-radius: 50%;
-}
-
-.redball {
-  background: $red;
-}
-
-.blueball {
-  background: $blue;
-}
-
-.greenball {
-  background: $green;
-}
-
-.bucket {
   color: #fff;
+}
+
+.republican {
+  background-color: $red;
+  color: #fff;
+}
+
+.item {
+  border-radius: 50%;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
 }

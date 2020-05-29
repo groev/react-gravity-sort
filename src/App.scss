@@ -63,6 +63,14 @@ html {
     background-color: rgba(255, 0, 0, 0.5);
     pointer-events: none;
   }
+  .success {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    background-color: rgba(0, 255, 0, 0.5);
+    pointer-events: none;
+  }
   .items {
     .item {
       background-size: cover;

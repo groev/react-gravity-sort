@@ -9,6 +9,7 @@ export default function Game() {
   const [liveItems, setLiveItems] = useState([]);
   const [points, setPoints] = useState(0);
   const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
   const [errors, setErrors] = useState(0);
   const [fallingTime, setFallingTime] = useState(config.fallingTime);
 
@@ -35,6 +36,7 @@ export default function Game() {
     setFallingTime(prevTime => prevTime * 0.95);
     if (x <= maxX && x >= minX) {
       setPoints(points + 1);
+      showSuccess();
     } else {
       const newErrorCount = errors + 1;
       if (newErrorCount > config.maxErrors) {
@@ -52,9 +54,18 @@ export default function Game() {
     }, 500);
   }
 
+  function showSuccess() {
+    setSuccess(true);
+    setTimeout(function() {
+      setSuccess(false);
+    }, 500);
+  }
+
   return (
     <div id="Game">
       {error && <div className="error"></div>}
+      {success && <div className="success"></div>}
+
       <div className="counter">{points}</div>
       <div className="items">
         {liveItems &&

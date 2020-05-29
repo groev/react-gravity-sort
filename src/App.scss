@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
+
+body,
+html {
+  border: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Chelsea Market", cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#Start {
+  display: flex;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #eee;
+  a {
+    text-decoration: none;
+    padding: 0.5rem;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+  }
+}
+
+#Game {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #eee;
+  .counter {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+  }
+  .error {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    background-color: rgba(255, 0, 0, 0.5);
+    pointer-events: none;
+  }
+  .items {
+    .item {
+      position: absolute;
+    }
+  }
+  .buckets {
+    display: flex;
+    align-self: flex-end;
+    height: 25%;
+    flex-grow: 1;
+    position: relative;
+    z-index: 99;
+    .bucket {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@import "./util/data.scss";

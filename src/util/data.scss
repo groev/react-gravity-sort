@@ -1,0 +1,37 @@
+$red: red;
+$blue: blue;
+$green: green;
+
+.blue {
+  background-color: $blue;
+}
+
+.red {
+  background-color: $red;
+}
+
+.green {
+  background-color: $green;
+}
+
+.greenball,
+.redball,
+.blueball {
+  border-radius: 50%;
+}
+
+.redball {
+  background: $red;
+}
+
+.blue {
+  background: $blue;
+}
+
+.greenball {
+  background: $green;
+}
+
+.bucket {
+  color: #fff;
+}

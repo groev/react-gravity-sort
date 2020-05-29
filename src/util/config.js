@@ -1,7 +1,7 @@
 // Define Time in seconds and size in Pixels.
 const config = {
-  gameTitle: "My Awesome sorting Game",
-  maxErrors: 2,
+  gameTitle: "What party am I?",
+  maxErrors: 5,
   interval: 3,
   fallingTime: 5,
   itemSize: {

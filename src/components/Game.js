@@ -20,7 +20,7 @@ export default function Game() {
   }, []);
 
   function addRandomItem() {
-    const len = items.length - 1;
+    const len = items.length;
     const randomNumber = Math.floor(Math.random() * Math.floor(len));
     const randomItem = items[randomNumber];
     setLiveItems(prevItems => [...prevItems, randomItem]);
@@ -31,6 +31,7 @@ export default function Game() {
     const bucketSize = window.innerWidth / buckets.length;
     const maxX = (bucketIndex + 1) * bucketSize;
     const minX = bucketIndex * bucketSize;
+
     setFallingTime(prevTime => prevTime * 0.95);
     if (x <= maxX && x >= minX) {
       setPoints(points + 1);

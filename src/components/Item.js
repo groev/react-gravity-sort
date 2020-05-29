@@ -12,13 +12,13 @@ export default function Item({ item, checkAndUpdatePoints, fallingTime }) {
       checkAndUpdatePoints(currentX, item.bucket);
     }
   }
-
   return (
     <motion.div
       onDragEnd={(event, info) => {
         setCurrentX(info.point.x);
       }}
       style={{
+        backgroundImage: "url(" + item.backgroundImage + ")",
         width: width + "px",
         height: height + "px",
         originX: 0.5,

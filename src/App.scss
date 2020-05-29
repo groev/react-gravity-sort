@@ -12,6 +12,14 @@ html {
   box-sizing: border-box;
 }
 
+.image-cache {
+  position: absolute;
+  top: -100%;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 #Start {
   display: flex;
   display: flex;
@@ -59,6 +67,7 @@ html {
   }
   .items {
     .item {
+      background-size: cover;
       position: absolute;
     }
   }

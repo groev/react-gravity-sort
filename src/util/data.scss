@@ -1,22 +1,37 @@
-$red: #e63946;
-$blue: #1d3557;
+$red: red;
+$blue: blue;
+$green: green;
 
-body {
-  background-image: url(./bg.jpg);
-  background-size: cover;
-}
-
-.democrat {
+.blue {
   background-color: $blue;
-  color: #fff;
 }
 
-.republican {
+.red {
   background-color: $red;
-  color: #fff;
 }
 
-.item {
+.green {
+  background-color: $green;
+}
+
+.greenball,
+.redball,
+.blueball {
   border-radius: 50%;
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.redball {
+  background: $red;
+}
+
+.blueball {
+  background: $blue;
+}
+
+.greenball {
+  background: $green;
+}
+
+.bucket {
+  color: #fff;
 }

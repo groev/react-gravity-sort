@@ -1,12 +1,12 @@
 // Define Time in seconds and size in Pixels.
 const config = {
-  gameTitle: "What party am I?",
+  gameTitle: "My Awesome sorting Game",
   maxErrors: 5,
   interval: 3,
   fallingTime: 5,
   itemSize: {
-    width: 80,
-    height: 80
+    width: 50,
+    height: 50
   }
 };
 export default config;
